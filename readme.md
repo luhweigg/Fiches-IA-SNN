@@ -43,7 +43,8 @@ Cette cartographie conceptuelle retrace l'architecture exacte du dépôt. Elle a
 └───────────────────────────────────┬────────────────────────────────────┘
                                     │
          ┌──────────────────────────┴──────────────────────────┐
-         ▼ (Attention & Contexte)                              ▼ (Le Pont Biologique)
+         ▼                                                     ▼ 
+(Attention & Contexte)					              (Le Pont Biologique)
 ┌────────────────────────────────────────┐ ┌────────────────────────────────────┐
 │ 📂 Machine_Learning/07_Transformers/   │ │ 📂 SNN/01_Fondations_Bio_Math/     │
 │ ├─► [19_Embeddings_Tokens]             │ │ └─► [01_Action_Pot] ──► [02_LIF]   │
@@ -55,7 +56,7 @@ Cette cartographie conceptuelle retrace l'architecture exacte du dépôt. Elle a
 └────────────────────────────────────────┘ │ └─► [05_STDP]                      │
                                            │                                    │
                                            │ 📂 SNN/04_App_Profond_Supervise/   │
-                                           │ └─► [06_Surrogate_BPT]──►[07_Conv]│
+                                           │ └─► [06_Surrogate_BPT]──►[07_Conv] │
                                            │                                    │
                                            │ 📂 SNN/05_Hardware_Neuromorphique/ │
                                            │ └─► [08_DVS]──►[09_Puces_Framework]│
@@ -68,7 +69,7 @@ Cette cartographie conceptuelle retrace l'architecture exacte du dépôt. Elle a
 
 #### 🟥 01 | Fondations & Concepts Clés
 
-- [**`01_Types_Apprentissage.md`**](01_Types_Apprentissage.md "null") : IA, ML, DL et grands paradigmes (Supervisé, Non Supervisé, Reinforcement).
+- [**`01_Types_Apprentissage.md`**](01_Types_Apprentissage.md "null") : IA, ML, DL et grands paradigmes (Supervisé, Non Supervisé, Renforcement).
     
 - [**`02_Cycle_De_Vie.md`**](02_Cycle_De_Vie.md "null") : Cycle de vie d'un projet, de l'ingestion à la mise en production.
     
