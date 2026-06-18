@@ -8,7 +8,7 @@ Le Transformer a été créé pour casser cette limite : il lit **tous les mots 
 
 Pour qu'il comprenne la grammaire, il faut lui injecter artificiellement la notion d'ordre.
 
-![[Pasted image 20260617151534.png]]
+![Image_Bag_Of_Words](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260617151534.png)
 
 ## 2. La Solution : L'Addition Géométrique
 

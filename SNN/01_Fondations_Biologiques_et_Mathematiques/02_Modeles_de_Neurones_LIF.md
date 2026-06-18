@@ -12,7 +12,7 @@ Le modèle LIF modélise la membrane du neurone comme un simple circuit électri
 * **La Résistance ($R$) :** Représente les canaux ioniques qui laissent "fuir" la charge électrique au fil du temps (la phase de **Fuite**).
 * **Le Courant ($I$) :** Représente les impulsions (*spikes*) reçues des autres neurones connectés en amont.
 
-![[Pasted image 20260615140709.png]]
+![Image_Circuit_RC](Fiches-IA-SNN/SNN/00_Images/Pasted%20image%2020260615140709.png)
 
 ## 3. L'Équation Différentielle Fondamentale
 
@@ -27,7 +27,7 @@ $$\tau_m \frac{dV(t)}{dt} = -(V(t) - V_{rest}) + R \cdot I(t)$$
   * Un $\tau_m$ **élevé** signifie une fuite lente (le neurone a une bonne mémoire des stimuli passés).
   * Un $\tau_m$ **faible** signifie une fuite rapide (le neurone oublie vite, il lui faut des stimuli très rapprochés pour réagir).
 
-![[Pasted image 20260615171713.png]]
+![Image_LIF_structure](Fiches-IA-SNN/SNN/00_Images/Pasted%20image%2020260615171713.png)
 
 ## 4. Le Mécanisme de Décharge (Fire) et de Réinitialisation (Reset)
 
@@ -38,7 +38,7 @@ Si la tension franchit le seuil, $V(t) \ge V_{th}$, alors deux choses se produis
 1. **Fire :** Le neurone émet un Spike (valeur de sortie = $1$).
 2. **Reset :** Le potentiel est instantanément écrasé et ramené à sa valeur de réinitialisation : $V(t) \to V_{reset}$ (généralement égal à $V_{rest}$).
 
-![[Pasted image 20260615143550.png]]
+![Image_LIF_Activation_System](Fiches-IA-SNN/SNN/00_Images/Pasted%20image%2020260615143550.png)
 
 > **La difficulté mathématique :** C'est cette discontinuité brutale (le *Reset* vertical) qui pose un problème majeur. La dérivée d'une chute instantanée est indéfinie. Par conséquent, il est mathématiquement impossible d'appliquer l'algorithme de Rétropropagation (Backpropagation) classique sur un réseau LIF. Cela nous amènera au concept des *Surrogate Gradients* (Fiche [[06_Surrogate_Gradients_et_BPTT]]).
 

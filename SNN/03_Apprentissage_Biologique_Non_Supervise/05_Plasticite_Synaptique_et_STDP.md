@@ -14,18 +14,18 @@ Donald Hebb a formulé la règle d'or de la neuroscience computationnelle :
 
 **Le principe :** Si le Neurone A (pré-synaptique) participe de manière répétée et persistante à déclencher le Neurone B (post-synaptique), alors l'efficacité de la connexion (le **poids synaptique**, $W$) entre A et B augmente. C'est ce qu'on appelle la **Plasticité Synaptique**.
 
-## 3. La Révolution : STDP (Spike-Timing-Dependent Plasticity)
+## 3. STDP (Spike-Timing-Dependent Plasticity)
 
 La règle de Hebb était trop vague. Dans les années 90, les chercheurs ont découvert que ce n'est pas seulement le fait de s'activer "ensemble" qui compte, mais le **timing exact** à la milliseconde près entre les deux impulsions. 
 
 La STDP est l'algorithme d'apprentissage non supervisé roi des SNN. Elle repose sur la causalité temporelle : $\Delta t = t_{post} - t_{pre}$
 
-![[Pasted image 20260615172426.png]]
+![Image_STDP](Fiches-IA-SNN/SNN/00_Images/Pasted%20image%2020260615172426.png)
 
 * **LTP (Long-Term Potentiation / Renforcement) :** Si le Neurone A tire juste *avant* le Neurone B ($\Delta t > 0$), cela signifie que A a probablement causé B. La connexion est jugée utile, le poids synaptique **augmente**.
 * **LTD (Long-Term Depression / Affaiblissement) :** Si le Neurone A tire juste *après* le Neurone B ($\Delta t < 0$), cela signifie que A n'a joué aucun rôle dans l'activation de B. La connexion est jugée inutile, le poids synaptique **diminue**.
 
-![[Pasted image 20260615171838.png]]
+![Image_LTP_LTD](Fiches-IA-SNN/SNN/00_Images/Pasted%20image%2020260615171838.png)
 
 ## 4. Les Mathématiques de la STDP
 

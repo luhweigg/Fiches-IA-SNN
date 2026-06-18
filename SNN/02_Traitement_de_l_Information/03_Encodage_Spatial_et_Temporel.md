@@ -14,7 +14,7 @@ C'est la méthode la plus ancienne, directement inspirée des premières observa
 * **Avantage :** Extrêmement robuste au bruit. Si un spike est perdu, l'information globale (la moyenne) reste à peu près correcte.
 * **Inconvénient :** Très lent et gourmand en énergie. Il faut "attendre" longtemps (une grande fenêtre temporelle) pour pouvoir calculer une fréquence fiable, et cela génère énormément de spikes, détruisant l'avantage énergétique des SNN.
 
-![[Pasted image 20260615153146.png]]
+![Image_Input_Activation](Fiches-IA-SNN/SNN/00_Images/Pasted%20image%2020260615153146.png)
 
 ## 3. Le Temporal Coding / Latency Coding (Time-To-First-Spike)
 
@@ -26,9 +26,9 @@ Pour pallier les défauts du Rate Coding, on utilise la dimension temporelle de 
 * **Avantage :** Efficacité énergétique et vitesse maximales (Inférence ultra-rapide). Le réseau prend souvent sa décision en ne lisant que les tout premiers spikes qui arrivent.
 * **Inconvénient :** Plus sensible au bruit temporel et nécessite une synchronisation d'horloge très précise en matériel.
 
-![[Pasted image 20260615171259.png]]
+![Image_Latency_Coding_RC_model](Fiches-IA-SNN/SNN/00_Images/Pasted%20image%2020260615171259.png)
 
-![[Pasted image 20260615171414.png]]
+![Image_Latency_Coding](Fiches-IA-SNN/SNN/00_Images/Pasted%20image%2020260615171414.png)
 
 ## 4. La Delta Modulation (Encodage Événementiel)
 
@@ -40,9 +40,9 @@ C'est l'encodage naturel utilisé pour traiter les données issues des caméras 
   * Si la valeur est stable : Silence total (zéro spike).
 * **Avantage :** Élimine toute la redondance spatiale et temporelle. C'est le Graal de l'efficacité neuromorphique (Sparse Data).
 
-![[Pasted image 20260615171448.png]]
+![Image_Delta_Modulation](Fiches-IA-SNN/SNN/00_Images/Pasted%20image%2020260615171448.png)
 
-![[Pasted image 20260615171509.png]]
+![Image_Neuron_Activation](Fiches-IA-SNN/SNN/00_Images/Pasted%20image%2020260615171509.png)
 
 ## 5. Le Population Coding (Encodage par Population)
 
@@ -50,7 +50,7 @@ Au lieu d'utiliser un seul neurone pour encoder une valeur, cette méthode distr
 
 * **Le Principe :** Chaque neurone de la population possède un champ récepteur spécifique (souvent modélisé par une courbe de Gauss). Un neurone réagira fortement à une certaine plage de valeurs, et faiblement aux autres. Une valeur d'entrée unique va donc activer simultanément plusieurs neurones, mais à des intensités différentes. La valeur est codée par le *ratio* d'activation de la population entière.
 
-![[Pasted image 20260615152722.png]]
+![Image_Courbe_Gauss](Fiches-IA-SNN/SNN/00_Images/Pasted%20image%2020260615152722.png)
 
 * **Avantage :** Permet une précision extrême avec des neurones individuellement imprécis (bruités). Extrêmement robuste aux pannes (si un neurone meurt, la population globale conserve l'information).
 * **Inconvénient :** Exige beaucoup plus de neurones (et donc de mémoire/poids synaptiques) pour encoder une seule variable.
@@ -62,4 +62,4 @@ Au lieu d'utiliser un seul neurone pour encoder une valeur, cette méthode distr
 | **Temporal Coding** | L'instant d'un unique spike | Ultra-rapide, basse conso | Sensible au bruit | IA embarquée très réactive |
 | **Delta Modulation** | Le changement d'état (ON/OFF) | Parcimonie (Sparsity) maximale | Nécessite des capteurs DVS | Traitement vidéo/audio temps réel |
 | **Population Coding** | Le ratio d'activation d'un groupe | Précision et robustesse extrêmes | Gourmand en nombre de neurones | Encodage de variables continues (angles, positions) |
-![[Pasted image 20260615171153.png]]
+![Image_Input_Options](Fiches-IA-SNN/SNN/00_Images/Pasted%20image%2020260615171153.png)

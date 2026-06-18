@@ -14,7 +14,7 @@ C'est le phénomène mathématique qui rend la réduction de dimension indispens
 1. Le volume de l'espace croît de manière exponentielle. Les données deviennent extrêmement "clairsemées" (éparpillées).
 2. La distance entre n'importe quelle paire de points tend à devenir identique. Par conséquent, les métriques géométriques (comme la distance euclidienne) perdent leur sens, ce qui rend les algorithmes basés sur la distance (comme KNN ou K-Means) inopérants.
 
-![[Pasted image 20260611155309.png]]
+![Image_Diemnsionality](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611155309.png)
 
 ## 3. Algorithmes Linéaires : PCA (Analyse en Composantes Principales)
 
@@ -26,7 +26,7 @@ La PCA est la technique de réduction de dimension linéaire la plus utilisée.
 
 * **Fonctionnement sous-jacent :** L'algorithme calcule la matrice de covariance des données centrées-réduites, puis procède à une extraction des valeurs propres  (*eigenvalues*) et des vecteurs propres (*eigenvectors*). Les vecteurs propres associés aux plus grandes valeurs propres forment les axes des composantes principales.
 
-![[Pasted image 20260611155501.png]]
+![Image_PCA](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611155501.png)
 
 ## 4. Algorithmes Non Linéaires (Manifold Learning)
 
@@ -40,7 +40,7 @@ Les méthodes linéaires comme la PCA échouent lorsque les données forment des
 
 * **Caractéristique :** Excellent pour séparer visuellement des clusters imbriqués. Cependant, il ne préserve pas bien la structure globale (les distances entre les clusters n'ont pas de sens géographique strict) et il est lourd en temps de calcul.
 
-![[Pasted image 20260611155859.png]]
+![Image_t-SNE](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611155859.png)
 
 ### B. UMAP (Uniform Manifold Approximation and Projection)
 
@@ -50,4 +50,4 @@ Les méthodes linéaires comme la PCA échouent lorsque les données forment des
   2. Préserve nettement mieux la structure globale (la distance relative entre les différents clusters reste significative).
   3. Peut être utilisé comme étape de prétraitement avant d'entraîner un modèle supervisé (ce que l'on évite généralement avec t-SNE).
 
-![[Pasted image 20260611155745.png]]
+![Image_UMAP](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611155745.png)

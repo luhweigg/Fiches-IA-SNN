@@ -42,6 +42,4 @@ On utilise alors le *Robust Scaler*, qui remplace la moyenne par la **médiane**
 
 $$X_{robust} = \frac{X - \text{Médiane}}{Q_3 - Q_1}$$
 
-![[Pasted image 20260617162656.png]]
-
-![[Pasted image 20260611161013.png]]
+![Image_BoxPlot](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260617162656.png)

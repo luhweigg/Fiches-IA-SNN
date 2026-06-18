@@ -47,4 +47,4 @@ Si le mot _mûr_ accorde 90% de son attention au mot _avocat_ et 10% au mot _est
 
 Le vecteur mis à jour n'est plus le concept générique de "mûr", c'est devenu le concept ultra-spécifique de "la maturité d'un avocat". Le mot a été contextualisé.
 
-![[Pasted image 20260617153035.png]]
+![Image_Schema_Transformers](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260617153035.png)

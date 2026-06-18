@@ -18,7 +18,7 @@ On utilise donc une couche d'**Embedding** (Plongement lexical).
 
 * **La Propriété :** L'algorithme d'Embedding (comme *Word2Vec*) apprend à placer les mots sémantiquement proches dans des zones géométriques proches. Le réseau ne lit plus des "mots", mais ingère une trajectoire de points dans un espace mathématique.
 
-![[Pasted image 20260612143530.png]]
+![Image_Embedding](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260612143530.png)
 
 ## 3. Le Réseau de Neurones Récurrent (RNN)
 
@@ -36,7 +36,7 @@ $$h_t = \tanh(W_x x_t + W_h h_{t-1} + b)$$
 * $W_x$ et $W_h$ : Les matrices de poids (qui sont **partagées** et restent identiques à chaque pas de temps).
 * La fonction $\tanh$ maintient les valeurs de la mémoire entre -1 et 1 pour éviter qu'elles n'explosent au fil du temps.
 
-![[Pasted image 20260612143855.png]]
+![Image_RNN](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260612143855.png)
 
 ## 4. La Limite du RNN : L'Amnésie (Vanishing Gradient)
 
@@ -57,4 +57,4 @@ L'ajout ou la suppression d'informations sur cette autoroute est strictement ré
 2. **Input Gate (Porte d'entrée) :** Décide quelle nouvelle information issue du mot actuel $x_t$ mérite d'être ajoutée à la mémoire à long terme $C_t$.
 3. **Output Gate (Porte de sortie) :** Filtre la mémoire à long terme $C_t$ pour générer le nouvel état caché $h_t$ (la mémoire à court terme) qui sera passé à l'étape suivante.
 
-![[Pasted image 20260612144140.png]]
+![Image_LSTM](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260612144140.png)

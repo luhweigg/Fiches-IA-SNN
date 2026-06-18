@@ -15,7 +15,7 @@ La différence majeure réside dans **la nature de l'information** échangée et
 | **La notion de Temps** | Inexistante (sauf astuce mathématique via les séquences RNN/LSTM). Les calculs sont statiques. | **Native.** Le temps est une dimension physique. L'information est codée par *le moment précis* où le spike survient. |
 | **Consommation d'Énergie**| Extrême (Matériels : GPU / TPU qui multiplient des matrices en permanence). | **Ultra-basse (Sparsity) :** Seuls les neurones actifs consomment de l'énergie. (Matériels : Puces neuromorphiques). |
 
-![[Pasted image 20260612160703.png]]
+![Image_SNN_vs_ANN](Fiches-IA-SNN/SNN/00_Images/Pasted%20image%2020260612160703.png)
 
 ## 3. L'Inspiration : Le Neurone Biologique
 

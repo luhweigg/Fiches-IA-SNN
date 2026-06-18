@@ -12,7 +12,7 @@ Voici le trajet exact d'une phrase à travers le réseau :
 
 4. **La Sortie :** Les vecteurs finaux arrivent au sommet de la pile pour la prédiction.
 
-## 2. La Bifurcation : Encodeur (BERT) vs Décodeur (GPT)
+## 2. Encodeur (BERT) vs Décodeur (GPT)
 
 Bien que l'architecture originale de 2017 comprenait un Encodeur connecté à un Décodeur (pour la traduction d'une langue à une autre), la recherche moderne a séparé ces deux éléments en deux branches distinctes.
 
@@ -32,7 +32,7 @@ Bien que l'architecture originale de 2017 comprenait un Encodeur connecté à un
 
 - **Le cas d'usage :** Génération de texte, agents conversationnels (Chatbots), rédaction assistée.
 
-![[Pasted image 20260617164502.png]]
+![Image_Encodeur_Decodeur](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260617164502.png)
 
 ## 3. L'Astuce du Décodeur : Le Masquage (Causal Attention)
 

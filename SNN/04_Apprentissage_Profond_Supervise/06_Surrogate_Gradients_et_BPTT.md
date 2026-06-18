@@ -20,7 +20,7 @@ Pour contourner ce mur théorique, les chercheurs ont inventé une astuce inform
 
 > **Le résultat :** L'optimiseur (ex: Adam) reçoit un gradient propre, lisse et exploitable. Le réseau apprend de ses erreurs tout en restant formellement un réseau à impulsions.
 
-![[Pasted image 20260615172504.png]]
+![Image_Surrogate_Gradient](Fiches-IA-SNN/SNN/00_Images/Pasted%20image%2020260615172504.png)
 
 ## 3. L'Algorithme BPTT (Backpropagation Through Time)
 
@@ -29,7 +29,7 @@ Parce qu'un SNN intègre la notion de temps (à travers l'équation différentie
 * **Le Déroulement (Unrolling) :** L'ordinateur "déroule" virtuellement le SNN sur tous les pas de temps de la simulation. Un réseau de 3 couches simulé sur 100 millisecondes est traité en mémoire comme un réseau gigantesque de 300 couches.
 * **Le chemin du gradient :** L'erreur ne remonte pas seulement dans l'espace (de la couche 3 vers la couche 2), elle remonte aussi **dans le temps** (de la milliseconde 100 vers la milliseconde 99) via le potentiel de membrane qui a été mémorisé.
 
-![[Pasted image 20260615172547.png]]
+![Image_BPTT](Fiches-IA-SNN/SNN/00_Images/Pasted%20image%2020260615172547.png)
 
 ## 4. Avantages et Inconvénients du Surrogate Gradient
 

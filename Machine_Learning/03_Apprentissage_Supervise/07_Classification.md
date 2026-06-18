@@ -32,7 +32,7 @@ $$
 
 Le SVM cherche à trouver un **hyperplan séparateur** qui divise l'espace des données pour isoler les classes. L'objectif mathématique est de maximiser la marge, c'est-à-dire la distance entre cet hyperplan et les points d'entraînement les plus proches de chaque classe (appelés "vecteurs de support").
 
-![[Pasted image 20260611150652.png]]
+![Image_SVM](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611150652.png)
 
 - **L'astuce du noyau (Kernel Trick) :** Si les données ne sont pas linéairement séparables, le SVM utilise une fonction mathématique (le noyau) pour projeter les données dans un espace de dimension supérieure où une séparation linéaire devient possible.
 
@@ -44,7 +44,7 @@ Pour prédire la classe d'un nouveau point :
 2. Il identifie les $K$ points les plus proches (les voisins).
 3. Il assigne la classe majoritaire parmi ces $K$ voisins au nouveau point.
 
-![[Pasted image 20260611150556.png]]
+![Image_K-NN](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611150556.png)
 
 ## 3. Métriques d'Évaluation
 

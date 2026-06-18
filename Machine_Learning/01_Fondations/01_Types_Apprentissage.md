@@ -21,7 +21,7 @@
 - **La régression :** La prédiction est une valeur continue
 	- *Exemple :* Prédire le prix d'une maison en fonction de sa surface.
 
-![[Pasted image 20260611103950.png]]
+![Image_Apprentissage_Supervise](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611104408.png)
 
 ---
 
@@ -38,7 +38,7 @@
 * **La Réduction de Dimensionnalité :** L'algorithme simplifie les données complexes en éliminant le superflu tout en gardant l'information importante.
     * *Exemple :* Résumer un tableau de 500 colonnes en seulement 5 colonnes essentielles pour le rendre analysable ou visualisable.
 
-![[Pasted image 20260611104243.png]]
+![Image_Apprentissage_Non_Supervise](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611104409.png)
 
 ---
 
@@ -67,4 +67,4 @@
 * La robotique (apprendre à un bras mécanique à attraper un objet sans le casser).
 * La voiture autonome (récompense : rester sur la route ; pénalité : collision).
 
-![[Pasted image 20260611104410.png]]
+![Image_Apprentissage_Renforcement](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611104410.png)

@@ -20,7 +20,7 @@ C'est un algorithme basé sur la notion de centroïdes (centres géométriques).
   $$Inertia = \sum_{j=1}^{K} \sum_{x_i \in C_j} ||x_i - \mu_j||^2$$
 * **Limites :** Suppose que les clusters sont sphériques et de taille similaire. Très sensible aux valeurs aberrantes (*outliers*).
 
-![[Pasted image 20260611153411.png]]
+![Image_KMeans](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611153411.png)
 
 ## 3. DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
 
@@ -37,7 +37,7 @@ C'est un algorithme basé sur la densité. Il est capable d'identifier des clust
 
 * **Avantages :** Il n'est pas nécessaire de spécifier le nombre de clusters à l'avance. Il isole nativement le bruit.
 
-![[Pasted image 20260611153914.png]]
+![Image_DBSCAN](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611153914.png)
 
 ## 4. CAH (Classification Ascendante Hiérarchique)
 
@@ -56,7 +56,7 @@ C'est un algorithme basé sur la connectivité qui construit une hiérarchie de 
 
 * **Utilisation :** On "coupe" le dendrogramme à la hauteur souhaitée pour obtenir le nombre $K$ de clusters désiré.
 
-![[Pasted image 20260611154108.png]]
+![Image_CAH](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611154108.png)
 
 ## 5. Évaluation et Choix du nombre de Clusters
 
