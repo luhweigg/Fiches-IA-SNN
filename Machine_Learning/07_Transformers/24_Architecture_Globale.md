@@ -32,7 +32,7 @@ Bien que l'architecture originale de 2017 comprenait un Encodeur connecté à un
 
 - **Le cas d'usage :** Génération de texte, agents conversationnels (Chatbots), rédaction assistée.
 
-![Image_Encodeur_Decodeur](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260617164502.png)
+![Image_Encodeur_Decodeur](../00_Images/Pasted%20image%2020260617164502.png)
 
 ## 3. L'Astuce du Décodeur : Le Masquage (Causal Attention)
 

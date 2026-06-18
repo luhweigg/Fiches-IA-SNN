@@ -17,7 +17,7 @@ L'optimisation du modèle consiste à trouver la combinaison d'hyperparamètres 
 
 * **Cas d'usage :** Espace de recherche de faible dimension (1 à 3 hyperparamètres maximum).
 
-![Image_Grid_Search](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611163020.png)
+![Image_Grid_Search](../00_Images/Pasted%20image%2020260611163020.png)
 
 ### B. Random Search (Recherche stochastique)
 

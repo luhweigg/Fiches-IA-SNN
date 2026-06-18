@@ -23,7 +23,7 @@ $$
 * **Les Poids ($\mathbf{w}$) :** Mesurent la force synaptique ou l'importance accordée à chaque entrée.
 * **Le Biais ($b$) :** Permet de translater la fonction de coût et de contrôler le seuil d'activation du neurone indépendamment des valeurs d'entrée.
 
-![Image_Perceptron](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260612110639.png)
+![Image_Perceptron](../00_Images/Pasted%20image%2020260612110639.png)
 
 ---
 
@@ -47,7 +47,7 @@ $$
 * **Dérivée :** $\sigma'(z) = \sigma(z)(1 - \sigma(z))$
 * **Limites :** Pour des valeurs de $|z|$ élevées, la fonction sature et sa dérivée tend vers 0. Cela bloque la rétropropagation des erreurs (phénomène de disparition du gradient ou *Vanishing Gradient*).
 
-![Image_Sigmoide](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260612110512.png)
+![Image_Sigmoide](../00_Images/Pasted%20image%2020260612110512.png)
 
 ### B. Tangente Hyperbolique (Tanh)
 Écrase les valeurs d'entrée dans l'intervalle $]-1, 1[$.
@@ -58,7 +58,7 @@ $$
 
 * **Avantage :** Elle est centrée sur zéro, ce qui produit des sorties dont la moyenne est proche de 0, facilitant et stabilisant l'optimisation des couches suivantes. Elle souffre néanmoins du même problème de saturation que la sigmoïde.
 
-![Image_Tanh](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260612110848.png)
+![Image_Tanh](../00_Images/Pasted%20image%2020260612110848.png)
 
 ### C. ReLU (Rectified Linear Unit)
 C'est le standard pour les couches cachées des réseaux profonds.
@@ -70,11 +70,11 @@ $$
 * **Dérivée :** $\text{ReLU}'(z) = 1$ si $z > 0$, et $0$ si $z < 0$.
 * **Avantages :** Son calcul est extrêmement rapide (simple seuillage) et sa dérivée constante à 1 pour les valeurs positives supprime le problème de disparition du gradient sur ces activations.
 
-![Image_ReLU](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260612110903.png)
+![Image_ReLU](../00_Images/Pasted%20image%2020260612110903.png)
 
 #### **Exemple de quelques autres fonctions d'activation :**
 
-![Image_Fonctions_Activation](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260612110638.png)
+![Image_Fonctions_Activation](../00_Images/Pasted%20image%2020260612110638.png)
 
 ---
 
@@ -93,7 +93,7 @@ $$
         \text{Softmax}(z_i) = \frac{e^{z_i}}{\sum_{j=1}^{C} e^{z_j}}
         $$
 
-![Image_Perceptron_Multicouche](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260612111405.png)
+![Image_Perceptron_Multicouche](../00_Images/Pasted%20image%2020260612111405.png)
 
 ---
 
@@ -110,4 +110,4 @@ $$
 * $\mathbf{b}^{(l)}$ : Le vecteur de biais de la couche $l$.
 * $\mathbf{a}^{(l)}$ : Le vecteur d'activation résultant de la couche $l$.
 
-![Image_Forward_Pass](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260612111623.png)
+![Image_Forward_Pass](../00_Images/Pasted%20image%2020260612111623.png)

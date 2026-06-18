@@ -10,7 +10,7 @@ $$Attention(Q, K, V) = Softmax\left(\frac{Q \cdot K^T}{\sqrt{d_k}}\right) V$$
 
 - **Pourquoi diviser par** $\sqrt{d_k}$ **(la racine de la dimension) ?** Dans un espace à très haute dimension, les produits scalaires peuvent produire des nombres gigantesques. Si on donne un nombre énorme au Softmax, il va écraser toutes les probabilités sur le mot gagnant (100% pour lui, 0% pour les autres). L'apprentissage serait totalement bloqué (gradient nul). La division "calme" les valeurs avant le Softmax pour garder une attention fluide et répartie.
 
-![Image_Softmax](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260617164204.png)
+![Image_Softmax](../00_Images/Pasted%20image%2020260617164204.png)
 
 ## 2. La limite de la tête unique
 
@@ -38,7 +38,7 @@ La solution de l'architecture Transformer est de **multiplier les points de vue*
     
     - La **Tête 3** va faire attention à la ponctuation ou aux rimes.
 
-![Image_Multihead_Attention](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260617153942.png)
+![Image_Multihead_Attention](../00_Images/Pasted%20image%2020260617153942.png)
 
 ## 4. La Fusion (Concaténation et Projection Finale)
 
@@ -52,4 +52,4 @@ Comment recoller tout cela pour rendre au mot sa dimension d'origine ?
 
 Cette opération remixe toutes les "opinions" des différentes têtes pour produire le **vecteur mis à jour final**. Ce vecteur contient désormais une compréhension d'une richesse exceptionnelle de son contexte grammatical et sémantique exact.
 
-![Image_Fusion_Multihead](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260617154011.png)
+![Image_Fusion_Multihead](../00_Images/Pasted%20image%2020260617154011.png)

@@ -20,12 +20,12 @@ La règle de Hebb était trop vague. Dans les années 90, les chercheurs ont dé
 
 La STDP est l'algorithme d'apprentissage non supervisé roi des SNN. Elle repose sur la causalité temporelle : $\Delta t = t_{post} - t_{pre}$
 
-![Image_STDP](Fiches-IA-SNN/SNN/00_Images/Pasted%20image%2020260615172426.png)
+![Image_STDP](../00_Images/Pasted%20image%2020260615172426.png)
 
 * **LTP (Long-Term Potentiation / Renforcement) :** Si le Neurone A tire juste *avant* le Neurone B ($\Delta t > 0$), cela signifie que A a probablement causé B. La connexion est jugée utile, le poids synaptique **augmente**.
 * **LTD (Long-Term Depression / Affaiblissement) :** Si le Neurone A tire juste *après* le Neurone B ($\Delta t < 0$), cela signifie que A n'a joué aucun rôle dans l'activation de B. La connexion est jugée inutile, le poids synaptique **diminue**.
 
-![Image_LTP_LTD](Fiches-IA-SNN/SNN/00_Images/Pasted%20image%2020260615171838.png)
+![Image_LTP_LTD](../00_Images/Pasted%20image%2020260615171838.png)
 
 ## 4. Les Mathématiques de la STDP
 

@@ -31,7 +31,7 @@ $$
 
 Une fois ce gradient calculé pour **tous** les poids du réseau, on peut les mettre à jour.
 
-![Image_Backpropagation](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260612113345.png)
+![Image_Backpropagation](../00_Images/Pasted%20image%2020260612113345.png)
 
 ## 3. Les Optimiseurs et la Mise à Jour des Poids
 
@@ -43,7 +43,7 @@ $$
 
 Le paramètre $\alpha$ (Alpha) est le **Taux d'Apprentissage (Learning Rate)**. C'est l'hyperparamètre le plus critique en Deep Learning.
 
-![Image_Learning_Rate](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260612140700.png)
+![Image_Learning_Rate](../00_Images/Pasted%20image%2020260612140700.png)
 
 ### A. Descente de Gradient Classique (Batch GD)
 Calcule l'erreur sur l'**intégralité** du jeu de données (des millions d'images) avant de faire une seule mise à jour des poids.
@@ -60,7 +60,7 @@ C'est le compromis standard. Divise le jeu de données en petits sous-ensembles 
 * **Avantage :** Trajectoire plus stable que le SGD pur, tout en permettant une parallélisation massive des calculs matriciels sur carte graphique (GPU). Évite de saturer la mémoire.
 * **Inconvénient :** Introduit un nouvel hyperparamètre à paramétrer manuellement (la taille du *batch*).
 
-![Image_Comparatif_Descente](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260612140436.png)
+![Image_Comparatif_Descente](../00_Images/Pasted%20image%2020260612140436.png)
 
 ### D. SGD avec Momentum
 Ajoute une notion d'inertie physique à la descente. L'algorithme accumule une fraction des gradients passés pour déterminer la direction actuelle.
@@ -89,7 +89,7 @@ C'est la version corrigée et le standard absolu actuel (notamment pour les Tran
 
 - **La solution AdamW :** Il découple mathématiquement la pénalité (Weight Decay) de la mise à jour du gradient. Le modèle bénéficie ainsi de la vitesse d'Adam ET de la robustesse de la régularisation L2, permettant une bien meilleure généralisation.
 
-![Image_Comparatif_Optimisateurs](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260612140701.png)
+![Image_Comparatif_Optimisateurs](../00_Images/Pasted%20image%2020260612140701.png)
 
 ## 4. Les Schedulers (Planificateurs)
 

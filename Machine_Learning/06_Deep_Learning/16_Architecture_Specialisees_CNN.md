@@ -20,7 +20,7 @@ Le cœur du CNN est la couche de convolution. Au lieu de connecter chaque neuron
 * **Partage des Poids (Weight Sharing) :** C'est le coup de génie mathématique du CNN. Un filtre 3x3 ne possède que 9 poids (+ 1 biais). Ce sont **ces mêmes 9 poids** qui glissent sur toute l'image. 
     * *L'avantage :* Si un filtre apprend à détecter un motif (ex: un œil) en haut à gauche, il sera capable de le détecter n'importe où ailleurs sur l'image. C'est l'**invariance par translation**.
 
-![Image_Convolution](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260612142244.png)
+![Image_Convolution](../00_Images/Pasted%20image%2020260612142244.png)
 
 ## 3. Les Hyperparamètres Géométriques
 
@@ -46,7 +46,7 @@ Intercalée entre les couches de convolution, la couche de *Pooling* a pour but 
 	
 	2. Rendre la détection encore plus robuste aux petites déformations spatiales (si un motif bouge d'un pixel, le maximum dans la fenêtre de Pooling restera probablement le même).
 
-![Image_Max_Avg_Pooling](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260612143222.png)
+![Image_Max_Avg_Pooling](../00_Images/Pasted%20image%2020260612143222.png)
 
 ## 5. L'Architecture Globale (L'Entonnoir)
 
@@ -57,7 +57,7 @@ Un CNN se divise toujours en deux blocs distincts :
 
 2. **Le Classifieur (La tête) :** À la toute fin, les *Feature Maps* très denses sont aplaties (couche `Flatten`) pour former un vecteur 1D. Ce vecteur alimente un réseau dense classique (MLP) qui se termine par une fonction Softmax pour émettre la prédiction finale (ex: Chien, Cheval ou Zèbre).
 
-![Image_CNN](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260612142516.png)
+![Image_CNN](../00_Images/Pasted%20image%2020260612142516.png)
 
 ## **6. ResNet et les Connexions Résiduelles (Skip Connections)**
 

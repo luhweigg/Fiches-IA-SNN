@@ -6,7 +6,7 @@ Un ordinateur ne possède aucune compréhension innée du texte ; il ne manipule
 
 - **Le Vocabulaire :** Le modèle possède un dictionnaire fini et figé (souvent entre 50 000 et 100 000 tokens). Lors de cette étape, chaque token est converti en son identifiant unique (un entier). Ex : `chat` = `1456`.
 
-![Image_Tokenisation](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260617145143.png)
+![Image_Tokenisation](../00_Images/Pasted%20image%2020260617145143.png)
 
 ## 2. L'Espace des Embeddings
 
@@ -18,7 +18,7 @@ Il faut imaginer un espace mathématique gigantesque doté de milliers de dimens
 
 - **La Règle d'or : La direction encode le sens.** La position de ce vecteur n'est pas aléatoire. Le réseau a appris, lors de son entraînement, à regrouper les concepts. Deux mots ayant un sens similaire (ex : `Chien` et `Loup`) auront des vecteurs qui pointent dans des directions très proches.
 
-![Image_Embedding](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260617145544.png)
+![Image_Embedding](../00_Images/Pasted%20image%2020260617145544.png)
 
 ## 3. L'Arithmétique des Mots
 
@@ -30,7 +30,7 @@ $$\vec{Roi} - \vec{Homme} + \vec{Femme} \approx \vec{Reine}$$
 
 - **Interprétation géométrique :** Si vous prenez les coordonnées du vecteur `Roi`, que vous vous déplacez dans la direction opposée au concept de masculinité ($- \vec{Homme}$), puis que vous avancez dans la direction du concept de féminité ($+ \vec{Femme}$), vous atterrissez géométriquement dans une zone de l'espace où le vecteur le plus proche est le token `Reine`. L'espace a mathématiquement encodé la notion de genre et de royauté.
 
-![Image_Graphique_Mots](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260617150100.png)
+![Image_Graphique_Mots](../00_Images/Pasted%20image%2020260617150100.png)
 
 ## 4. La Limite Fondamentale (Pourquoi l'Attention ?)
 

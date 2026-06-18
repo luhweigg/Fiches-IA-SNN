@@ -15,13 +15,13 @@ Les algorithmes mathématiques (à de rares exceptions près comme XGBoost) ne p
 * **Imputation Algorithmique (ex: KNN Imputer) :**
   Le modèle cherche les $K$ voisins les plus proches de l'observation incomplète (en calculant la distance sur les autres *features* disponibles) et attribue la valeur moyenne de ces voisins à la donnée manquante.
 
-![Image_KNN](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611161011.png)
+![Image_KNN](../00_Images/Pasted%20image%2020260611161011.png)
 
 ## 2. Gestion des Valeurs Aberrantes (Outliers)
 
 Un *outlier* est une observation qui dévie de manière si significative des autres observations qu'elle éveille le soupçon d'avoir été générée par un mécanisme différent (ex: erreur de capteur).
 
-![Image_Outliers](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611161012.png)
+![Image_Outliers](../00_Images/Pasted%20image%2020260611161012.png)
 
 ### A. Méthodes de Détection
 

@@ -12,7 +12,7 @@ $$
 * $\beta_1$ : Le coefficient directeur (pente).
 * $\epsilon$ : L'erreur ou bruit résiduel.
 
-![Image_Regression_Lineaire](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611111943.png)
+![Image_Regression_Lineaire](../00_Images/Pasted%20image%2020260611111943.png)
 
 ### B. Régression Linéaire Multiple (N variables)
 S'il y a $p$ variables explicatives, le modèle devient un hyperplan dans un espace multidimensionnel :
@@ -24,7 +24,7 @@ $$
 **Fonctionnement (Optimisation) :**
 L'algorithme cherche à estimer les paramètres $\beta$ optimaux en utilisant la méthode des **Moindres Carrés Ordinaires (MCO)**. L'objectif est de minimiser la somme des carrés des écarts entre les valeurs prédites $\hat{y}$ et les valeurs réelles observées $y$.
 
-![Image_Regression_Lineaire_Multiple](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611152714.png)
+![Image_Regression_Lineaire_Multiple](../00_Images/Pasted%20image%2020260611152714.png)
 
 ### C. La Descente de Gradient (Gradient Descent)
 
@@ -44,7 +44,7 @@ $$
   * S'il est trop petit, l'algorithme met un temps infini à converger. 
   * S'il est trop grand, l'algorithme "enjambe" le minimum et diverge (l'erreur explose au lieu de se réduire).
 
-![Gradient_Descent](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611152921.png)
+![Gradient_Descent](../00_Images/Pasted%20image%2020260611152921.png)
 
 ## 3. La Régression Polynomiale
 Lorsque les données ne suivent pas une ligne droite, la régression linéaire simple sous-performe (Underfitting). La régression polynomiale modélise des relations non linéaires en créant de nouvelles features qui sont des puissances de la feature initiale :
@@ -56,7 +56,7 @@ $$
 * $d$ : Le degré du polynôme.
 * *Attention :* Bien qu'elle modélise une courbe, cette méthode reste un "modèle linéaire" du point de vue de l'estimation des paramètres $\beta$. Augmenter le degré $d$ de façon excessive mène inévitablement à l'Overfitting : le modèle apprendra le bruit statistique au lieu de la tendance.
 
-![Image_Regression_Polynomiale](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611113530.png)
+![Image_Regression_Polynomiale](../00_Images/Pasted%20image%2020260611113530.png)
 
 ## 4. Métriques d'Évaluation
 Une fois le modèle entraîné, on mesure ses erreurs de prédiction (les résidus : $y_i - \hat{y}_i$). Soit $N$ le nombre total d'observations :
@@ -69,7 +69,7 @@ Une fois le modèle entraîné, on mesure ses erreurs de prédiction (les résid
   $$MSE = \frac{1}{N} \sum_{i=1}^{N} (y_i - \hat{y}_i)^2$$
   La moyenne des erreurs au carré. Ce carré facilite la dérivation mathématique pour l'optimisation, mais il pénalise très fortement les grandes erreurs de prédiction.
 
-![Image_MSE](Fiches-IA-SNN/Machine_Learning/00_Images/Pasted%20image%2020260611113638.png)
+![Image_MSE](../00_Images/Pasted%20image%2020260611113638.png)
 
 * **RMSE (Root Mean Squared Error - Racine de l'Erreur Quadratique Moyenne) :**
   $$RMSE = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (y_i - \hat{y}_i)^2}$$
